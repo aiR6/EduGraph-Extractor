@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://akwi.de/ns/bise#> .
+
+<http://th-brandenburg.de/>
+        a                               schema:CollegeOrUniversity ;
+        <http://akwi.de/ns/bise#:hash>  "d1e169c74d6ffe764bc2f43e1a261492" ;
+        <http://akwi.de/ns/bise#:srcURL>
+                "http://extraktor.next-lvl-service.de/thb.js" ;
+        ns1:cpECTS                      180 ;
+        ns1:pillarBAM                   "0.2" ;
+        ns1:pillarBIS                   "0.41" ;
+        ns1:pillarCSC                   "0.23" ;
+        ns1:stPeriodOfStudy             "6 Semester" ;
+        schema:alternateName            "THB" ;
+        schema:itemReviewed             ns1:WIB-THB ;
+        schema:location                 <http://dbpedia.org/resource/Brandenburg_an_der_Havel> ;
+        schema:name                     "Technische Hochschule Brandenburg" ;
+        schema:provider                 <http://th-brandenburg.de/> ;
+        schema:ratingValue              "Platz 8 " ;
+        schema:url                      "http://th-brandenburg.de" .
+
+<http://www.fh-flensburg.de/>
+        a                               schema:CollegeOrUniversity ;
+        <http://akwi.de/ns/bise#:hash>  "1b9e2f054ca60908e8631bfcbb5902d4" ;
+        <http://akwi.de/ns/bise#:srcURL>
+                "http://extraktor.next-lvl-service.de/hsfi.js" ;
+        ns1:cpECTS                      180 ;
+        ns1:pillarBAM                   "0.25" ;
+        ns1:pillarBIS                   "0.33" ;
+        ns1:pillarCSC                   "0.28" ;
+        ns1:stPeriodOfStudy             "6 Semester" ;
+        schema:alternateName            "FHFl" ;
+        schema:location                 <http://dbpedia.org/resource/Flensburg> ;
+        schema:name                     "Bachelor WI - Wirtschaftsinformatik" ;
+        schema:provider                 <http://www.fh-flensburg.de/> ;
+        schema:ratingValue              "Platz 38" ;
+        schema:url                      "https://www.fh-flensburg.de/fhfl/wirtschaftsinformatik0.html " .
+
+<http://dbpedia.org/resource/Fulda_University_of_Applied_Sciences>
+        a                               schema:CollegeOrUniversity ;
+        <http://akwi.de/ns/bise#:hash>  "eaa022e1af0d4268c634f328e2cb4131" ;
+        <http://akwi.de/ns/bise#:srcURL>
+                "http://extraktor.next-lvl-service.de/hsf.js" ;
+        ns1:cpECTS                      180 ;
+        ns1:pillarBAM                   "0.2" ;
+        ns1:pillarBIS                   "0.36" ;
+        ns1:pillarCSC                   "0.28" ;
+        ns1:stPeriodOfStudy             "6 Semester" ;
+        schema:alternateName            "HSF" ;
+        schema:location                 <http://dbpedia.org/resource/Fulda> ;
+        schema:name                     "Fulda " ;
+        schema:provider                 <http://dbpedia.org/resource/Fulda_University_of_Applied_Sciences> ;
+        schema:ratingValue              "Platz 16" ;
+        schema:url                      "https://www.hs-fulda.de/fachbereiche/angewandte-informatik/studium/studiengaenge/wirtschaftsinformatik-bsc/" .
