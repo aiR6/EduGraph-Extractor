@@ -1,0 +1,30 @@
+a:15:{s:7:"getURLs";s:159:"SELECT ?hochschule ?ExtraktorUrl ?hash {
+  ?hochschule <http://akwi.de/ns/bise#:srcURL> ?ExtraktorUrl.
+   ?hochschule <http://akwi.de/ns/bise#:hash> ?hash
+}";s:11:"saveTrippel";s:59:"update=
+DELETE{
+<!uri!> ?p ?o
+ }WHERE{
+<!uri!> ?p ?o
+}";s:17:"insertHash+srcURL";s:245:"update=
+DELETE{ 
+<!uri!> <http://akwi.de/ns/bise#:hash> ?o.
+ <!uri!> <http://akwi.de/ns/bise#:srcURL> ?x;
+}
+ INSERT{ 
+<!uri!> <http://akwi.de/ns/bise#:hash> "!hash!" . 
+<!uri!> <http://akwi.de/ns/bise#:srcURL> "!extraktURL!";	
+}
+WHERE{}";s:16:"insertEnrichment";s:519:"update=
+DELETE{<!uri!> <http://akwi.de/ns/bise#pillarBAM> ?x}
+WHERE{<!uri!> <http://akwi.de/ns/bise#pillarBAM> ?x};
+DELETE{<!uri!> <http://akwi.de/ns/bise#pillarBIS> ?y}
+WHERE{<!uri!> <http://akwi.de/ns/bise#pillarBIS> ?y};
+DELETE{<!uri!> <http://akwi.de/ns/bise#pillarCSC> ?z}
+WHERE{<!uri!> <http://akwi.de/ns/bise#pillarCSC> ?z};
+INSERT{
+ <!uri!> <http://akwi.de/ns/bise#pillarBAM> "!BAM!".
+ <!uri!> <http://akwi.de/ns/bise#pillarBIS> "!BIS!".
+ <!uri!> <http://akwi.de/ns/bise#pillarCSC> "!CSC!"
+}
+WHERE{}";s:15:"sparqlStoreRead";s:70:"http://fbwsvcdev.fh-brandenburg.de:8080/fuseki/biseExtract-WS16?query=";s:15:"sparqStoreWrite";s:70:"http://fbwsvcdev.fh-brandenburg.de:8080/fuseki/biseExtract-WS16/update";s:16:"sparqStoreImport";s:64:"http://fbwsvcdev.fh-brandenburg.de:8080/fuseki/biseExtract-WS16/";s:12:"extraktorURL";s:53:"http://rdf-translator.appspot.com/convert/json-ld/n3/";s:13:"enrichService";s:52:"http://172.16.32.159:8080/ModulKatalogREST/Kataloge/";s:8:"saveFile";s:4:"save";s:6:"mailTO";s:24:"wolter@th-brandenburg.de";s:13:"extractFailed";s:33:"Extraktionsservice fehlgeschlagen";s:13:"analyseFailed";s:29:"Analyseservice fehlgeschlagen";s:12:"enrichFailed";s:35:"Anreicherungsservice fehlgeschlagen";s:11:"storeFailed";s:30:"Speicherservice fehlgeschlagen";}
