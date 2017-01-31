@@ -7,7 +7,7 @@ $file = file_get_contents('./config', true);
 $conf =unserialize($file);
 
 /*
- * Diese Funktion läd alle URLs von Hochschulen die im Datastore gespeichert
+ * Diese Funktion lädt alle URLs von Hochschulen die im Datastore gespeichert
  * sind. Das Suchmuster ist ?hochschule <http://akwi.de/ns/bise#:srcURL> ?ExtraktorUrl.
  *
  * Die Funktion ist in extract.php genutzt,
@@ -53,7 +53,7 @@ function extractRdfFromUrl($url){
 /*
  * Diese Funktion speichert die Ergebnisse der Services extrakt.php, analyse.php
  * und enrichment.php in eine Datei.
- * Hierzu wird das Array serialziert um es in eine Datei zu schreiben.
+ * Hierzu wird das Array serialisiert um es in eine Datei zu schreiben.
  */
 function saveExtract2File($array) {
     //Globales Konfigurationsarray
@@ -83,10 +83,10 @@ function saveExtract2File($array) {
     fclose ($handle);
 }
 /*
- * Die Funktion schreibt das extrakt in den Datastore (DS). Als erstes werden die
+ * Die Funktion schreibt das Extrakt in den Datastore (DS). Als erstes werden die
  * alten Tripel aus den Datastore gelöscht. Im Anschluss wird das neue Extrakt
  * in den DS importiert.
- * Zuletzt werden die Methadaten Hash und srcURL hinzugefügt.
+ * Zuletzt werden die Metadaten Hash und srcURL hinzugefügt.
  */
 function saveTriple ($extrakt, $uri, $extraktURL, $hash){
     //Globales Konfigurationsarray
@@ -110,7 +110,7 @@ function saveTriple ($extrakt, $uri, $extraktURL, $hash){
 }
 /*
  * Diese Funktion schreibt die drei Werte des Webservices in den DS.
- * Als erstes werden die vorhanden werte aus dem DS gelöscht und im Anschluss die neuen
+ * Als erstes werden die vorhanden Werte aus dem DS gelöscht und im Anschluss die neuen
  * Werte in den DS geschrieben.
  */
 function saveEnrichment($uri, $BAM, $BIS, $CSC){
